@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Tailwind  Loopstudios 웹사이트</title>
+  </head>
+  <body>
+
+       <!-- 히어로 섹션 -->
+       <section id="hero">
+        <!-- 히어로 컨테이너 -->
+        <div class="container max-w-6xl mx-auto px-6 py-12">
+          <!-- 메뉴/로고 컨테이너 -->
+          <nav class="flex items-center justify-between font-bold text-white">
+            <!-- 로고 -->
+            <img src="images/logo.svg" alt="" />
+            <!-- 메뉴 -->
+            <div class="hidden h-10 font-alata md:flex md:space-x-8">
+              <div class="group">
+                <a href="#">소개</a>
+                <div
+                  class="mx-2 group-hover:border-b group-hover:border-blue-50"
+                ></div>
+              </div>
+              <div class="group">
+                <a href="#">경력</a>
+                <div
+                  class="mx-2 group-hover:border-b group-hover:border-blue-50"
+                ></div>
+              </div>
+              <div class="group">
+                <a href="#">이벤트</a>
+                <div
+                  class="mx-2 group-hover:border-b group-hover:border-blue-50"
+                ></div>
+              </div>
+              <div class="group">
+                <a href="#">제품</a>
+                <div
+                  class="mx-2 group-hover:border-b group-hover:border-blue-50"
+                ></div>
+              </div>
+              <div class="group">
+                <a href="#">지원</a>
+                <div
+                  class="mx-2 group-hover:border-b group-hover:border-blue-50"
+                ></div>
+              </div>
+            </div>
+            <!-- 햄버거 버튼 -->
+            <div class="md:hidden">
+              <button
+                id="menu-btn"
+                type="button"
+                class="z-40 block hamburger md:hidden focus:outline-none"
+              >
+                <span class="hamburger-top"></span>
+                <span class="hamburger-middle"></span>
+                <span class="hamburger-bottom"></span>
+              </button>
+            </div>
+          </nav>
+  
+          <!-- 모바일 메뉴 -->
+          <div
+            id="menu"
+            class="absolute top-0 bottom-0 left-0 hidden flex-col self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-3 text-lg text-white uppercase bg-black"
+          >
+            <a href="#" class="hover:text-pink-500">소개</a>
+            <a href="#" class="hover:text-pink-500">경력</a>
+            <a href="#" class="hover:text-pink-500">이벤트</a>
+            <a href="#" class="hover:text-pink-500">제품</a>
+            <a href="#" class="hover:text-pink-500">지원</a>
+          </div>
+  
+          <div
+            class="max-w-lg mt-32 mb-32 p-4 font-sans text-4xl text-white uppercase border-2 md:p-10 md:m-32 md:mx-0 md:text-6xl"
+          >
+            인상적인 경험을 제공합니다
+          </div>
+        </div>
+      </section>
+  
+
+  <!-- 기능 섹션 -->
+  <section id="feature">
+    <!-- 기능 컨테이너 -->
+    <div
+      class="relative container flex flex-col max-w-6xl mx-auto my-32 px-6 text-gray-900 md:flex-row md:px-0"
+    >
+      <!-- 이미지 -->
+      <img src="images/desktop/image-interactive.jpg" alt="" />
+
+      <!-- 텍스트 컨테이너 -->
+      <div
+        class="top-48 pr-0 bg-white md:absolute md:right-0 md:py-20 md:pl-20"
+      >
+        <h2
+          class="max-w-lg mt-10 mb-6 font-sans text-4xl text-center text-gray-900 uppercase md:text-5xl md:mt-0 md:text-left"
+        >
+          인터랙티브 VR의 선두주자
+        </h2>
+
+        <p class="max-w-md text-center md:text-left">
+          2011년에 설립된 Loopstudios는 세계 최고의 기업들을 위해 세계적 수준의 가상 현실 프로젝트를 제작해왔습니다. 우리의 수상 경력이 있는 창작물들은 브랜드에 부합하는 디지털 경험을 통해 비즈니스를 변화시켰습니다.
+        </p>
+      </div>
+    </div>
+  </section>
+
+    <!-- 창작물 섹션 -->
+    <section id="creations">
+      <!-- 창작물 컨테이너 -->
+      <div class="container max-w-6xl mx-auto my-32 px-6 text-gray-900 md:px-0">
+        <!-- 창작물 헤더 -->
+        <div class="flex justify-center mb-20 md:justify-between">
+          <h2 class="text-4xl text-center uppercase md:text-left md:text-5xl">
+            우리의 창작물
+          </h2>
+
+          <button class="hidden btn md:block">모두 보기</button>
+        </div>
+
+        <!-- 항목 컨테이너 -->
+        <div class="item-container">
+          <!-- 항목 1 -->
+          <div class="group item">
+            <!-- 데스크탑 이미지 -->
+            <img
+              src="images/desktop/image-deep-earth.jpg"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110"
+            />
+            <!-- 모바일 이미지 -->
+            <img
+              src="images/mobile/image-deep-earth.jpg"
+              alt=""
+              class="w-full md:hidden"
+            />
+            <!-- 항목 그라디언트 -->
+            <div class="item-gradient"></div>
+            <!-- 항목 텍스트 -->
+            <h5>딥 어스</h5>
+          </div>
+
+          <!-- 항목 2 -->
+          <div class="group item">
+            <!-- 데스크탑 이미지 -->
+            <img
+              src="images/desktop/image-night-arcade.jpg"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110"
+            />
+            <!-- 모바일 이미지 -->
+            <img
+              src="images/mobile/image-night-arcade.jpg"
+              alt=""
+              class="w-full md:hidden"
+            />
+            <!-- 항목 그라디언트 -->
+            <div class="item-gradient"></div>
+            <!-- 항목 텍스트 -->
+            <h5>나이트 아케이드</h5>
+          </div>
+
+          <!-- 항목 3 -->
+          <div class="group item">
+            <!-- 데스크탑 이미지 -->
+            <img
+              src="images/desktop/image-soccer-team.jpg"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110"
+            />
+            <!-- 모바일 이미지 -->
+            <img
+              src="images/mobile/image-soccer-team.jpg"
+              alt=""
+              class="w-full md:hidden"
+            />
+            <!-- 항목 그라디언트 -->
+            <div class="item-gradient"></div>
+            <!-- 항목 텍스트 -->
+            <h5>축구팀 VR</h5>
+          </div>
+
+          <!-- 항목 4 -->
+          <div class="group item">
+            <!-- 데스크탑 이미지 -->
+            <img
+              src="images/desktop/image-grid.jpg"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110"
+            />
+            <!-- 모바일 이미지 -->
+            <img
+              src="images/mobile/image-grid.jpg"
+              alt=""
+              class="w-full md:hidden"
+            />
+            <!-- 항목 그라디언트 -->
+            <div class="item-gradient"></div>
+            <!-- 항목 텍스트 -->
+            <h5>더 그리드</h5>
+          </div>
+        </div>
+
+        <!-- 항목 컨테이너 2 -->
+        <div class="item-container mt-10">
+          <!-- 항목 1 -->
+          <div class="group item">
+            <!-- 데스크탑 이미지 -->
+            <img
+              src="images/desktop/image-from-above.jpg"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110"
+            />
+            <!-- 모바일 이미지 -->
+            <img
+              src="images/mobile/image-from-above.jpg"
+              alt=""
+              class="w-full md:hidden"
+            />
+            <!-- 항목 그라디언트 -->
+            <div class="item-gradient"></div>
+            <!-- 항목 텍스트 -->
+            <h5>위에서 바라본 VR</h5>
+          </div>
+
+          <!-- 항목 2 -->
+          <div class="group item">
+            <!-- 데스크탑 이미지 -->
+            <img
+              src="images/desktop/image-pocket-borealis.jpg"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110"
+            />
+            <!-- 모바일 이미지 -->
+            <img
+              src="images/mobile/image-pocket-borealis.jpg"
+              alt=""
+              class="w-full md:hidden"
+            />
+            <!-- 항목 그라디언트 -->
+            <div class="item-gradient"></div>
+            <!-- 항목 텍스트 -->
+            <h5>포켓 보레알리스</h5>
+          </div>
+
+          <!-- 항목 3 -->
+          <div class="group item">
+            <!-- 데스크탑 이미지 -->
+            <img
+              src="images/desktop/image-curiosity.jpg"
+              alt=""
+              class="hidden w-full duration-200 md:block group-hover:scale-110"
+            />
+            <!-- 모바일 이미지 -->
+            <img
+              src="images/mobile/image-curiosity.jpg"
+              alt=""
+              class="w-full md:hidden"
+            />
+            <!-- 항목 그라디언트 -->
+            <div class="item-gradient"></div>
+            <!-- 항목 텍스트 -->
+            <h5>큐리오시티</h5>
+          </div>
+
+
+
+        <!-- 항목 4 -->
+        <div class="group item">
+      <!-- 데스크탑 이미지 -->
+          <img
+            src="images/desktop/image-fisheye.jpg"
+            alt=""
+            class="hidden w-full duration-200 md:block group-hover:scale-110"
+          />
+         <!-- 모바일 이미지 -->
+          <img
+            src="images/mobile/image-fisheye.jpg"
+            alt=""
+            class="w-full md:hidden"
+          />
+           <!-- 항목 그라디언트 -->
+          <div class="item-gradient"></div>
+          <!-- 항목 3 -->
+          <h5>Make It Fisheye</h5>
+        </div>
+
+
+
+
+        </div>
+
+        <!-- 모두 보기 버튼 -->
+        <div class="flex justify-center mt-10">
+          <button class="btn md:hidden">모두 보기</button>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <footer class="bg-black">
+      <!-- 컨테이너 -->
+      <div class="container max-w-6xl py-10 mx-auto">
+        <!-- 푸터 플렉스 컨테이너 -->
+        <div
+          class="flex flex-col items-center mb-8 space-y-6 md:flex-row md:space-y-0 md:justify-between md:items-start"
+        >
+          <!-- 메뉴 및 로고 컨테이너 -->
+          <div
+            class="flex flex-col items-center space-y-8 md:items-start md:space-y-4"
+          >
+            <!-- 로고 -->
+            <div class="h-8">
+              <img src="images/logo.svg" alt="" class="w-44 md:ml-3" />
+            </div>
+            <!-- 메뉴 컨테이너 -->
+            <div
+              class="flex flex-col items-center space-y-4 font-bold text-white md:flex-row md:space-y-0 md:space-x-6 md:ml-3"
+            >
+              <!-- 항목 1 -->
+              <div class="h-10 group">
+                <a href="#">소개</a>
+                <div
+                  class="mx-2 group-hover:border-b group-hover:border-blue-50"
+                ></div>
+              </div>
+              <!-- 항목 2 -->
+              <div class="h-10 group">
+                <a href="#">채용</a>
+                <div
+                  class="mx-2 group-hover:border-b group-hover:border-blue-50"
+                ></div>
+              </div>
+              <!-- 항목 3 -->
+              <div class="h-10 group">
+                <a href="#">이벤트</a>
+                <div
+                  class="mx-2 group-hover:border-b group-hover:border-blue-50"
+                ></div>
+              </div>
+              <!-- 항목 4 -->
+              <div class="h-10 group">
+                <a href="#">제품</a>
+                <div
+                  class="mx-2 group-hover:border-b group-hover:border-blue-50"
+                ></div>
+              </div>
+              <!-- 항목 5 -->
+              <div class="h-10 group">
+                <a href="#">지원</a>
+                <div
+                  class="mx-2 group-hover:border-b group-hover:border-blue-50"
+                ></div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- 소셜 및 저작권 컨테이너 -->
+          <div
+            class="flex flex-col items-start justify-between space-y-4 text-gray-500"
+          >
+            <!-- 아이콘 컨테이너 -->
+            <div
+              class="flex items-center justify-center mx-auto space-x-4 md:justify-end md:mx-0"
+            >
+              <!-- 아이콘 1 -->
+              <div class="h-8 group">
+                <a href="#">
+                  <img src="images/icon-facebook.svg" alt="" class="h-6" />
+                </a>
+              </div>
+              <!-- 아이콘 2 -->
+              <div class="h-8 group">
+                <a href="#">
+                  <img src="images/icon-twitter.svg" alt="" class="h-6" />
+                </a>
+              </div>
+              <!-- 아이콘 3 -->
+              <div class="h-8 group">
+                <a href="#">
+                  <img src="images/icon-pinterest.svg" alt="" class="h-6" />
+                </a>
+              </div>
+              <!-- 아이콘 4 -->
+              <div class="h-8 group">
+                <a href="#">
+                  <img src="images/icon-instagram.svg" alt="" class="h-6" />
+                </a>
+              </div>
+            </div>
+    
+            <!-- 저작권 -->
+            <div class="font-bold">
+              &copy; 2024 Loopstudios. All Rights Reserved
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  
+  </body>
+</html>
